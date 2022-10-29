@@ -1,0 +1,72 @@
+****************************************
+Report : power
+        -significant_digits 5
+Design : vga_lcd_fast
+Version: T-2022.03-SP1
+Date   : Fri Sep 23 23:40:29 2022
+****************************************
+Information: Activity propagation will be performed for scenario S1.
+Information: Doing activity propagation for mode 'M1' and corner 'C1' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario S1 (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation with 8 threads!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: M1
+Corner: C1
+Scenario: S1
+Voltage: 0.90000
+Temperature: 85.00000
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1uW
+Leakage Power Unit   : 1uW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00000 (default)
+VSS (ground) probability 1.00000 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clut_mem_clut_mem_ra_reg_1__u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clut_mem_clut_mem_ra_reg_1__u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clut_mem_clut_mem_ra_reg_3__u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clut_mem_clut_mem_ra_reg_3__u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clut_mem_clut_mem_ra_reg_4__u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clut_mem_clut_mem_ra_reg_4__u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell pixel_generator_color_proc_vdat_buffer_rreq_reg_u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell pixel_generator_color_proc_vdat_buffer_rreq_reg_u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell clut_mem_clut_mem_ra_reg_0__u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell clut_mem_clut_mem_ra_reg_0__u0 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+Warning: Rise toggles on pin wbm_dImDone_reg_u0/Q are impossible given input states; converted to fall toggles. (POW-069)
+Warning: Rise toggles on pin wbs_cursor1_ld_reg_u0/Q are impossible given input states; converted to fall toggles. (POW-069)
+Warning: Rise toggles on pin pixel_generator_vtgen_hor_gen_Done_reg_u0/Q are impossible given input states; converted to fall toggles. (POW-069)
+Warning: Rise toggles on pin wbm_dImDoneStrb_reg_u0/Q are impossible given input states; converted to fall toggles. (POW-069)
+
+  Cell Internal Power    = 1.37477e+05 uW ( 88.4%)
+  Net Switching Power    = 1.81049e+04 uW ( 11.6%)
+Total Dynamic Power      = 1.55582e+05 uW (100.0%)
+
+Cell Leakage Power       = 1.85568e+04 uW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                 0.00000e+00            0.00000e+00            0.00000e+00            0.00000e+00    (  0.0%)         
+memory                 0.00000e+00            0.00000e+00            0.00000e+00            0.00000e+00    (  0.0%)         
+black_box              0.00000e+00            0.00000e+00            0.00000e+00            0.00000e+00    (  0.0%)         
+clock_network          1.13339e+05            0.00000e+00            0.00000e+00            1.13339e+05    ( 65.1%)         
+register               1.69049e+04            5.78768e+03            9.36619e+03            3.20587e+04    ( 18.4%)         
+sequential             0.00000e+00            0.00000e+00            0.00000e+00            0.00000e+00    (  0.0%)         
+combinational          7.23308e+03            1.23173e+04            9.19058e+03            2.87409e+04    ( 16.5%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                  1.37477e+05 uW         1.81049e+04 uW         1.85568e+04 uW         1.74139e+05 uW
+1

@@ -1,0 +1,68 @@
+****************************************
+Report : power
+        -significant_digits 5
+Design : aes_128
+Version: T-2022.03-SP1
+Date   : Fri Sep 23 00:28:54 2022
+****************************************
+Information: Activity propagation will be performed for scenario S1.
+Information: Doing activity propagation for mode 'M1' and corner 'C1' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario S1 (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation with 8 threads!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: M1
+Corner: C1
+Scenario: S1
+Voltage: 0.90000
+Temperature: 85.00000
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1uW
+Leakage Power Unit   : 1uW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00000 (default)
+VSS (ground) probability 1.00000 (default)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U5 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.104848, value = 0.232141 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell RKGEN_U0_U10 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.326667, value = 0.328770 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell RKGEN_U0_U9 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.326667, value = 0.778656 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell RKGEN_U0_U9 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.085685, value = 0.090016 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell RKGEN_U0_U7 for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.326667, value = 0.479946 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell RKGEN_U0_Key_FirstStage_reg_6_ for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell RKGEN_U0_Key_FirstStage_reg_6_ for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell RKGEN_U0_Key_FirstStage_reg_22_ for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell RKGEN_U0_Key_FirstStage_reg_22_ for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell RKGEN_U0_Key_SecondStage_reg_27_ for parameter Tinp. Lowest table value = 0.001613, highest table value = 0.163333, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 3.55699e+05 uW ( 69.8%)
+  Net Switching Power    = 1.53667e+05 uW ( 30.2%)
+Total Dynamic Power      = 5.09366e+05 uW (100.0%)
+
+Cell Leakage Power       = 4.02739e+04 uW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                 0.00000e+00            0.00000e+00            0.00000e+00            0.00000e+00    (  0.0%)         
+memory                 0.00000e+00            0.00000e+00            0.00000e+00            0.00000e+00    (  0.0%)         
+black_box              0.00000e+00            0.00000e+00            0.00000e+00            0.00000e+00    (  0.0%)         
+clock_network          1.97855e+05            0.00000e+00            0.00000e+00            1.97855e+05    ( 36.0%)         
+register               4.51071e+04            3.60235e+04            6.39903e+03            8.75296e+04    ( 15.9%)         
+sequential             0.00000e+00            0.00000e+00            0.00000e+00            0.00000e+00    (  0.0%)         
+combinational          1.12737e+05            1.17644e+05            3.38748e+04            2.64256e+05    ( 48.1%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                  3.55699e+05 uW         1.53667e+05 uW         4.02739e+04 uW         5.49640e+05 uW
+1

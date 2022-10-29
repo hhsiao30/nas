@@ -1,0 +1,22 @@
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+****************************************
+Report : global timing
+        -format { narrow }
+Design : aes_128
+Version: T-2022.03-SP1
+Date   : Sun Oct  9 08:18:50 2022
+****************************************
+
+Setup violations
+--------------------------------------------------------------
+          Total   reg->reg    in->reg   reg->out    in->out
+--------------------------------------------------------------
+WNS       -0.02      -0.02       0.00       0.00       0.00
+TNS      -14.30     -14.30       0.00       0.00       0.00
+NUM        1634       1634          0          0          0
+--------------------------------------------------------------
+
+No hold violations found.
+
+
+1

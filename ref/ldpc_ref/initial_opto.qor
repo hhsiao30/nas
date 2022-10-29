@@ -1,0 +1,117 @@
+Using libraries: ldpc hvt_0p90v_85c lvt_0p90v_85c uhvt_0p90v_85c ulvt_0p90v_85c
+Warning: In library ldpc, no block views exist for block ldpc. (LNK-064)
+Visiting block ldpc:initial_opto.design
+Warning: Converting port/pin object 'clock' from ideal to propagated. (UIC-027)
+Warning: Converting port/pin object 'clock' from ideal to propagated. (UIC-027)
+Design 'ldpc' was successfully linked.
+Information: Timer using 8 threads
+Warning: Technology layer 'AP' setting 'routing-direction' is not valid (NEX-001)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: clock, coded_block_2041_, coded_block_2033_, coded_block_2025_, coded_block_2017_. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: coded_block_2046_, coded_block_2038_, coded_block_2030_, coded_block_2022_, coded_block_2014_. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: load, coded_block_2040_, coded_block_2032_, coded_block_2024_, coded_block_2016_. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: coded_block_2043_, coded_block_2035_, coded_block_2027_, coded_block_2019_, coded_block_2011_. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: coded_block_2045_, coded_block_2037_, coded_block_2029_, coded_block_2021_, coded_block_2013_. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: coded_block_2044_, coded_block_2036_, coded_block_2028_, coded_block_2020_, coded_block_2012_. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: coded_block_2047_, coded_block_2039_, coded_block_2031_, coded_block_2023_, coded_block_2015_. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: reset, coded_block_2042_, coded_block_2034_, coded_block_2026_, coded_block_2018_. (DPPA-325)
+****************************************
+Report : qor
+Design : ldpc
+Version: T-2022.03-SP1
+Date   : Thu Sep 22 23:59:52 2022
+****************************************
+Information: Corner C1: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned ON for design 'ldpc:initial_opto.design'. (TIM-125)
+Warning: Technology layer 'AP' setting 'routing-direction' is not valid (NEX-001)
+Information: HNSCALE = 0.900 (NEX-004)
+Information: Design Average RC for design initial_opto  (NEX-011)
+Information: r = 9.949672 ohm/um, via_r = 16.320305 ohm/cut, c = 0.164440 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 11.298349 ohm/um, via_r = 16.320307 ohm/cut, c = 0.165042 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: Crosstalk analysis has been disabled. (TIM-114)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 44130, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 44128, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 enabled
+Timing Window Analysis:                    enabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     enabled
+Advanced Receiver Model:                   disabled
+ML Acceleration:                           off
+************************************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+
+Scenario           'S1'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     17
+Critical Path Length:              1.02
+Critical Path Slack:              -0.36
+Critical Path Clk Period:          0.67
+Total Negative Slack:           -429.09
+No. of Violating Paths:            2048
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                  41472
+Buf/Inv Cell Count:                7678
+Buf Cell Count:                    2304
+Inv Cell Count:                    5374
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:         39424
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:             2048
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       2048
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            42906.67
+Noncombinational Area:          6970.21
+Buf/Inv Area:                   6965.19
+Total Buffer Area:              2927.83
+Total Inverter Area:            4037.36
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                  646096.52
+Net YLength:                  544951.48
+----------------------------------------
+Cell Area (netlist):                          49876.88
+Cell Area (netlist and physical only):        49876.88
+Net Length:                  1191048.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             44132
+Nets with Violations:               178
+Max Trans Violations:               177
+Max Cap Violations:                 155
+----------------------------------------
+
+1
